@@ -3,8 +3,33 @@ html, body, jumbotron {
         margin: 0;
         padding: 0;
       }
+
+      jumbotron{
+        background-color: grey;
+      }
       
       #map {
-        height: 60%;
+        height: 55%;
         margin: 45px;
+        border: 7px;
+        border-color: black;
+      }
+
+      #divTeste{
+        height: 35%; 
+        background-color: lightslategrey;      
+      }
+
+      ul li{
+        list-style-type: none;
+        display: inline;
+        text-align: center;
+      }
+
+      div h1{
+        color: whitesmoke;
+      }
+
+      h1{
+        text-align: center;
       }

@@ -2,25 +2,36 @@
 <html lang="pt-br" ng-app="map">
 
 <head>
-    <title>Teste Google Maps API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <title>Google Maps API</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="UTF-8">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body ng-controller="mapCtrl">
-    <div class="jumbotron">
-        <button type="button" class="btn btn-xs btn-primary" ng-click="MudaCidade('FOR')">Fortaleza</button><br>
-        <button type="button" class="btn btn-xs btn-primary" ng-click="MudaCidade('RJ')">Rio de Janeiro</button><br>
-        <button type="button" class="btn btn-xs btn-primary" ng-click="MudaCidade('PAR')">Paris</button><br>
-    </div>
+    
+        <div class="jumbotron">
+            <h1>Google Maps</h1>
+            <ul>
+                <li><button type="button" class="btn btn-primary btn-lg" btn-lg" ng-click="MudaCidade('FOR')">Fortaleza</button></li>
+                <li><button type="button" class="btn btn-primary btn-lg" ng-click="MudaCidade('RJ')">Rio de Janeiro</button></li>
+                <li><button type="button" class="btn btn-primary btn-lg" ng-click="MudaCidade('PAR')">Paris</button></li>
+            </ul>
+        </div>
 
     <div id="map"></div>
+    <div id="divTeste">
+        <br>
+        <h1>Google</h1>
+    </div>
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLx1einyfhsNvlbG1ayEbySZrMnrcWVL4&callback=initMap" async defer></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="lib/map.js"></script>
     <script src="lib/controller.js"></script>
 </body>

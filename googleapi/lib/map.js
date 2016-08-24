@@ -1,14 +1,15 @@
-var map;
+// var map;
 
-    function initMap() {
-      var lat;
-      var lng;
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: -3.43, lng: -38.32}, // Fortaleza
-      zoom: 8,
-      scrollwheel: false
-    });
+//     function initMap() {
+//       var lat;
+//       var lng;
 
-    map.setMapTypeId(google.maps.MapTypeId.TERRAIN);
+//     map = new google.maps.Map(document.getElementById('map'), {
+//       center: {lat: -3.43, lng: -38.32}, // Fortaleza
+//       zoom: 8,
+//       scrollwheel: true
+//     });
+
+//     map.setMapTypeId(google.maps.MapTypeId.TERRAIN);
     
-  }
+//   }
